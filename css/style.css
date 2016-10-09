@@ -1,0 +1,95 @@
+/*Try to import font from "google fonts"*/
+@font-face{
+	font-family: 'Inconsolata';
+	url:(https://fonts.googleapis.com/css?family=Inconsolata);
+} 
+/*Here we have a general setting for tags*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0 auto;
+	font-family: 'Inconsolata', Arial, sans-serif;
+	
+}
+h1{
+	padding: 30px 0px;
+	text-align: center;
+	font-size: 1.75em;
+
+}
+h1, h3{
+}
+p{	
+	text-align:justify;
+	font-size: 1.25em;
+	padding: 10px 15px;	
+}
+h3 {
+	padding: 0px 15px;
+	font-size: 1.75em;
+}
+/*Bellow add classes to colorize title*/
+.indianred{
+	background-color: indianred;
+}
+.khaki{
+	background-color: khaki;
+}
+.rosybrown{
+	background-color: rosybrown;
+}
+/*Classes for content*/
+.container{
+	margin: 0 auto;
+	width: 90%;
+	height:auto; 
+ 	
+}
+.box{
+	margin: 1%;
+	width: 31.33%;
+	height: auto;
+	background-color: darkgray;
+	float: left;
+	border: 1px solid #000000;
+	border-radius:2px;
+	position: relative;
+}
+/*some practice with an after float clear*/
+.menu-box:after{
+	clear: both;
+}
+.title{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	width: 140px;
+	border: 1px solid black;
+	
+}
+/*This is a little fix, actually, I don`t found solving the problem 
+with title and description collapsing*/
+.description{
+	margin-top: 35px;
+}
+/*****Here media queries*****/
+@media (min-width: 768px) and (max-width: 991px) { 
+	.box{
+		margin: 1%;
+		width: 48%;
+	}
+	.sushi{
+		margin: 1%;
+		width: 98%;
+	}
+ }
+ @media (max-width: 767px) {
+ 	.box{
+ 		margin: 10px 0;
+ 		width: 100%;
+ 	}
+ }
