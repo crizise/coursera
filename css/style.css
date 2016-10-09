@@ -1,6 +1,6 @@
 /*Try to import font from "google fonts"*/
 @font-face{
-	font-family: 'Inconsolata';
+	font-family: "Inconsolata";
 	url:(https://fonts.googleapis.com/css?family=Inconsolata);
 } 
 /*Here we have a general setting for tags*/
@@ -58,7 +58,7 @@ h3 {
 	border-radius:2px;
 	position: relative;
 }
-/*some practice with an after float clear*/
+/*some practice with an afterfloat clear*/
 .menu-box:after{
 	clear: both;
 }
@@ -82,7 +82,7 @@ with title and description collapsing*/
 		margin: 1%;
 		width: 48%;
 	}
-	.sushi{
+	.box:last-child{
 		margin: 1%;
 		width: 98%;
 	}
